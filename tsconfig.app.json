@@ -1,0 +1,15 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["src/**/*", "src/**/*.vue", "tailwind.config.js", "env.d.ts", "public/modules"],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "lib": ["ES2017", "dom"],
+    "ignoreDeprecations": "5.0",
+    "composite": true,
+    "baseUrl": ".",
+    "typeRoots": ["./src/typings"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
